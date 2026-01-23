@@ -136,7 +136,7 @@ int main()
         expr.push_back(&c1);
         expr.push_back(&u1);
         for (int i=0;i<3;i++) {
-            expr[i]->print(); // On utilise -> car c'est un pointeur
+            expr[i]->print();
             std::cout << "Res: " << expr[i]->eval()<< std::endl;
         }
     }
