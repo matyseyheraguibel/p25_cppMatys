@@ -274,7 +274,7 @@ Graph read_triplet(const std::string &filename) // ON ME DIT DE CODER LA FONCTIO
 int main()
 {
 
-    Graph graph = read_triplet("graph0.txt");
+    Graph graph = read_triplet("graph0.txt"); // j'ai créé un .txt !!!!!! et pas un ; gr (je l'ai push)
     graph.dfs();
     graph.madj();
     graph.madjprint();
