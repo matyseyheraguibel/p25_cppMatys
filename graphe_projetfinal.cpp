@@ -18,7 +18,7 @@ class Edge;
 class Graph;
 
 
-struct Matrix // je suis obligé de le refaire pcque j ai perdu mon tp Matrix à cause des histoire de Git
+struct Matrix // je suis obligé de le refaire pcque j ai perdu mon tp Matrix à cause des histoires de Git
 {
     int r = 0;
     int c = 0;
@@ -139,11 +139,12 @@ public:
     void appelrecursif(std::set<Vertex *> &vis, Vertex *start) //appel récursif de dfs 
     
     //j'ai eu qq problèmes d'homogénéité de types et je ne comprenais pas les messages du terminal: l'IA m'a aidé ici par eg :
-    // J'avais des erreurs que je comprenais pas dans le terminal, l'IA m'indique que je compare des edge
+    // J'avais des erreurs que je comprenais pas dans le terminal, l'IA m'indique que je compare des edges
     // et des vertex car je faisais (vis.find((start->v)[i]) == vis.end()), je comprends tout de suite qu il me manque un ->end qq part
 
     //Je ne comprenais pas pourquoi le programme affichait plusieurs fois la même ville 
-    //l'IA m'indique qu'il manque le & et que je perds sinon des infos lorsque je revient d'un appel récursif. Cela est logique d'utiliser donc le & 
+    //l'IA m'indique qu'il manque le & dans les arguments de la fonction et que je perds 
+    //sinon des infos lorsque je revient d'un appel récursif. Cela est logique d'utiliser donc le & 
     //qui réfèrera toujours vers le même set et donc ne perdra pas l'information
 
     {
